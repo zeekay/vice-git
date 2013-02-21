@@ -1,8 +1,9 @@
+call vice#ForceActivateAddons([
+    \ 'github:tpope/vim-fugitive',
+    \ 'github:tpope/vim-git',
+\ ])
+
 call vice#Extend({
-    \ 'addons': [
-        \ 'github:tpope/vim-fugitive',
-        \ 'github:tpope/vim-git',
-    \ ],
     \ 'commands': {
         \ 'Gist': ['github:mattn/gist-vim', 'github:mattn/webapi-vim'],
         \ 'Gitv': ['github:gregsexton/gitv'],
