@@ -1,3 +1,16 @@
+if !exists('g:vice.git')
+    let g:vice.git = {}
+endif
+
+if !exists('g:vice.git.loaded') || &cp
+    let g:vice.git.loaded = 1
+else
+    finish
+endif
+
+let addon_dir = expand('<sfile>:p:h:h')
+let &rtp.=','.addon_dir
+
 call vice#Extend({
     \ 'addons': [
         \ 'github:tpope/vim-fugitive',
@@ -9,17 +22,17 @@ call vice#Extend({
     \ },
 \ })
 
-exe 'so '.g:vice.addons_dir.'/vim-fugitive/plugin/fugitive.vim'
+" exe 'so '.g:vice.addons_dir.'/vim-fugitive/plugin/fugitive.vim'
 
 " Gitv {{{
     let g:Gitv_WipeAllOnClose = 1
     let g:Gitv_OpenPreviewOnLaunch = 1
     let g:Gitv_DoNotMapCtrlKey = 1
-    " set lazyredraw
-    " augroup git
-    "     au!
-    "     au FileType git setl foldlevel=99
-    " augroup END
+    set lazyredraw
+    augroup git
+        au!
+        au FileType git setl foldlevel=99
+    augroup END
 " }}}
 
 " Git commit {{{
