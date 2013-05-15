@@ -10,6 +10,10 @@ call vice#Extend({
     \ },
 \ })
 
+let g:Gitv_WipeAllOnClose = 1
+let g:Gitv_OpenPreviewOnLaunch = 1
+let g:Gitv_DoNotMapCtrlKey = 1
+
 cabbrev gist <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gist' : 'gist')<CR>
 cabbrev git <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Git' : 'git')<CR>
 cabbrev gitv <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gitv' : 'gitv')<CR>
