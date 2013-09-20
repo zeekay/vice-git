@@ -3,9 +3,10 @@ call vice#Extend({
         \ 'github:tpope/vim-fugitive',
         \ 'github:tpope/vim-git',
         \ 'github:zeekay/vim-git-hax',
+        \ 'github:mattn/webapi-vim',
     \],
     \ 'commands': {
-        \ 'Gist': ['github:mattn/gist-vim', 'github:mattn/webapi-vim'],
+        \ 'Gist': ['github:mattn/gist-vim'],
         \ 'Gitv': ['github:gregsexton/gitv'],
     \ },
 \ })
