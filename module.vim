@@ -11,19 +11,19 @@ call vice#Extend({
     \ },
 \ })
 
-let g:Gitv_WipeAllOnClose = 1
+let g:Gitv_WipeAllOnClose      = 1
 let g:Gitv_OpenPreviewOnLaunch = 1
-let g:Gitv_DoNotMapCtrlKey = 1
+let g:Gitv_DoNotMapCtrlKey     = 1
 
-cabbrev gist <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gist' : 'gist')<CR>
-cabbrev git <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Git' : 'git')<CR>
+cabbrev git  <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Git'  : 'git')<CR>
 cabbrev gitv <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gitv' : 'gitv')<CR>
+cabbrev gist <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gist' : 'gist')<CR>
 
 cabbrev gb <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gbrowse' : 'gb')<CR>
 cabbrev gc <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gcommit' : 'gc')<CR>
-cabbrev gd <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gdiff' : 'gd')<CR>
-cabbrev ge <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gedit' : 'ge')<CR>
-cabbrev gl <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Glog' : 'gl')<CR>
+cabbrev gd <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gdiff'   : 'gd')<CR>
+cabbrev ge <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gedit'   : 'ge')<CR>
+cabbrev gl <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Glog'    : 'gl')<CR>
 cabbrev gs <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gstatus' : 'gs')<CR>
 
 nnoremap <leader>gb :Gbrowse<cr>
