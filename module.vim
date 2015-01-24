@@ -4,6 +4,7 @@ call vice#Extend({
         \ 'github:tpope/vim-git',
         \ 'github:zeekay/vim-git-hax',
         \ 'github:mattn/webapi-vim',
+        \ 'github:junegunn/vim-github-dashboard',
     \],
     \ 'commands': {
         \ 'Gist': ['github:mattn/gist-vim'],
@@ -14,6 +15,7 @@ call vice#Extend({
 let g:Gitv_WipeAllOnClose      = 1
 let g:Gitv_OpenPreviewOnLaunch = 1
 let g:Gitv_DoNotMapCtrlKey     = 1
+let g:github_dashboard         = {'username': 'zeekay', 'password': $GITHUB_TOKEN}
 
 cabbrev git  <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Git'  : 'git')<CR>
 cabbrev gitv <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gitv' : 'gitv')<CR>
