@@ -40,3 +40,6 @@ nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>ge :Gedit<cr>
 nnoremap <leader>gl :silent! Glog<cr>:redraw!<cr>
 nnoremap <leader>gs :Gstatus<cr>
+
+au BufNewFile,BufRead .gitignore setl filetype=gitignore
+au FileType gitignore set commentstring=#\ %s
