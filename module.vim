@@ -4,11 +4,12 @@ call vice#Extend({
         \ 'github:tpope/vim-git',
         \ 'github:zeekay/vim-git-hax',
         \ 'github:mattn/webapi-vim',
-        \ 'github:junegunn/vim-github-dashboard',
     \],
     \ 'commands': {
-        \ 'Gist': ['github:mattn/gist-vim'],
-        \ 'Gitv': ['github:gregsexton/gitv'],
+        \ 'GHDashboard': ['github:junegunn:vim-github-dashboard'],
+        \ 'Gissues':     ['github:jaxbot/github-issues.vim'],
+        \ 'Gist':        ['github:mattn/gist-vim'],
+        \ 'Gitv':        ['github:gregsexton/gitv'],
     \ },
 \ })
 
