@@ -2,11 +2,12 @@ call vice#Extend({
     \ 'addons': [
         \ 'github:tpope/vim-fugitive',
         \ 'github:tpope/vim-git',
+        \ 'github:tpope/vim-rhubarb',
         \ 'github:zeekay/vim-git-hax',
         \ 'github:mattn/webapi-vim',
     \],
     \ 'commands': {
-        \ 'GHDashboard': ['github:junegunn:vim-github-dashboard'],
+        \ 'GHDashboard': ['github:junegunn/vim-github-dashboard'],
         \ 'Gissues':     ['github:jaxbot/github-issues.vim'],
         \ 'Gist':        ['github:mattn/gist-vim'],
         \ 'Gitv':        ['github:gregsexton/gitv'],
