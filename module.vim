@@ -5,10 +5,10 @@ call vice#Extend({
         \ 'github:tpope/vim-rhubarb',
         \ 'github:zeekay/vim-git-hax',
         \ 'github:mattn/webapi-vim',
+        \ 'github:jaxbot/github-issues.vim',
     \],
     \ 'commands': {
         \ 'GHDashboard': ['github:junegunn/vim-github-dashboard'],
-        \ 'Gissues':     ['github:jaxbot/github-issues.vim'],
         \ 'Gist':        ['github:mattn/gist-vim'],
         \ 'Gitv':        ['github:gregsexton/gitv'],
     \ },
@@ -17,6 +17,9 @@ call vice#Extend({
 let g:Gitv_WipeAllOnClose      = 1
 let g:Gitv_OpenPreviewOnLaunch = 1
 let g:Gitv_DoNotMapCtrlKey     = 1
+
+let g:gissues_lazy_load = 1
+let g:gissues_async_omni = 1
 
 let g:github_dashboard         = {
     \ 'username': 'zeekay',
