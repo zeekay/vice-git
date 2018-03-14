@@ -5,7 +5,7 @@ call vice#Extend({
         \ 'github:tpope/vim-rhubarb',
         \ 'github:zeekay/vim-git-hax',
         \ 'github:mattn/webapi-vim',
-        \ 'github:jaxbot/github-issues.vim',
+        \ 'github:zeekay/github-issues.vim',
     \],
     \ 'commands': {
         \ 'GHDashboard': ['github:junegunn/vim-github-dashboard'],
