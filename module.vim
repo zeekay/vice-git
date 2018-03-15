@@ -48,3 +48,5 @@ nnoremap <leader>gs :Gstatus<cr>
 
 au BufNewFile,BufRead .gitignore setl filetype=gitignore
 au FileType gitignore set commentstring=#\ %s
+
+let g:github_access_token = $GITHUB_TOKEN
