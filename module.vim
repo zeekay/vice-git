@@ -5,7 +5,6 @@ call vice#Extend({
         \ 'github:tpope/vim-rhubarb',
         \ 'github:zeekay/vim-git-hax',
         \ 'github:mattn/webapi-vim',
-        \ 'github:jaxbot/github-issues.vim',
     \],
     \ 'commands': {
         \ 'GHDashboard': ['github:junegunn/vim-github-dashboard'],
@@ -13,6 +12,8 @@ call vice#Extend({
         \ 'Gitv':        ['github:gregsexton/gitv'],
     \ },
 \ })
+
+" Disabled for now: github:jaxbot/github-issues.vim
 
 let g:Gitv_WipeAllOnClose      = 1
 let g:Gitv_OpenPreviewOnLaunch = 1
