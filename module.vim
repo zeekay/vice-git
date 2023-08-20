@@ -2,7 +2,6 @@ call vice#Extend({
     \ 'addons': [
         \ 'github:tpope/vim-fugitive',
         \ 'github:tpope/vim-git',
-        \ 'github:tpope/vim-rhubarb',
         \ 'github:zeekay/vim-git-hax',
         \ 'github:mattn/webapi-vim',
     \],
